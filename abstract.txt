@@ -1,0 +1,56 @@
+Introduction 
+
+points:     
+    - metagenomic sequencing is cool
+    - illumina only isn't great
+    - new technologies are coming
+    - not many people have generated closed genomes
+
+Introduction
+
+Metagenomic sequencing is commonly used for investigating the genomic content of unculturable bacterial species, such as the human gut microbiome. Short read Illumina sequencing has significantly advanced this field, however, it is generally not possible to reconstruct closed genomes from Illumina-only metagenomic data because of the difficulty assembling through repetitive genomic regions. Rapid improvements in long read sequencing technology (Oxford Nanopore minION) have enabled improved contiguity by scaffolding short-read assemblies, however, still only approximately 60-70 of the 7000 metagenomically assembled genomes submitted to NCBI are closed, with most studies resulting in only a single closed genome. Closing genomes directly from metagenomic data will provide a significant benefit to the field that will enable higher resolution studies of unculturable bacteria that contribute to health and disease. 
+
+Hypothesis
+
+Recent technological and algorithmic advances have enabled the sequencing and assembly of long reads of approximately 4-5 kilobases, resulting in improved contiguity, but falling short of completed genomes. We hypothesize that metagenomic assemblies can be further improved by sequencing ultra-long DNA fragments, followed by polishing with highly accurate Illumina reads.  
+
+Materials and Methods
+
+High molecular weight DNA was extracted from an enriched bacterial community that degrades a toxic by-product of oil production, 1-adamantanecarboxylic, acid using a phenol/chloroform based method. DNA was sequenced using the Oxford Nanopore minION platform (R9.4.1) and Illumina NextSeq 550. Long read metagenomic assembly was performed, followed by long and short read polishing. To ensure there were no mis assemblies, each genome was validated by evaluating coverage of both Illumina and Nanopore reads. 
+
+Results
+
+High molecular weight DNA extraction method resulted in half of the bases sequenced belonging to reads over 24 kb. Multiple closed genomes were obtained directly from metagenomic data, representing the majority of species in the community. One genome, predicted to belong to the recently proposed Candidate phyla radiation, shows a distinct drop in Illumina coverage and a large increase in GC content over 30 kb. However, long reads that span the region exist, suggesting that the drop in coverage is due to technical artifacts of Illumina sequencing, or the region is a mobile genetic element. We developed a bioinformatic pipeline to process the data and validate the assemblies using Illumina and Nanopore coverage, GC skew, and GC content. 
+
+Discussion and Conclusions
+
+Assembling complete genomes from metagenomic data has the potential to decrease the cost of genome assembly while increasing the quality of information obtained from unculturable bacterial communities. The DNA extraction method is critical; ultra long reads are essential because they can resolve repetitive genomic regions that Illumina reads cannot. Ultra long reads enable resolution that cannot be achieved with Illumina sequencing only. State of the art Illumina-based methods would not have identified the 30 kb region as belonging to the genome because of the drop in coverage and distinct GC content. We propose a pipeline for validating de novo assembled genomes from metagenomic data when no reference genomes are available. Completing genomes from unculturable bacterial communities such as the human gut microbiome has the potential to improve our understanding of the bacteria that contribute to health and disease.  
+
+##############################################################################
+
+lay abstract (1000 chars)
+
+- dna sequencing technology is rapidly improving. can be used to create genomes from bacterial communities. 
+- the problem is repeats in the genome, making it hard to correctly assemble
+
+
+- ultra long fragments of dna can now be sequenced and used 
+- genomes of individual species can now be obtained from a community of bacteria, couldn't really do that before
+
+- we can improve our knowledge of the bacterial communities that we can't grow, such as our gut microbiome by generating full genomes for bacterial in there. 
+
+intro
+
+DNA sequencing technology has been rapidly improving over the last 10 years, and can be used to investigate bacterial genomes. However, technical limitations have prevented sequencing technologies from reconstructing genomes of individual species from bacterial communities. We sought to reconstruct genomes of individual species from a community of bacteria. For this, we used a community of bacteria that can degrade toxic oil by-products. We achieved this by sequencing ultra long fragments of DNA, enabling us to reconstruct genomes of individual species from communities. We also developed software tools to do this, and to ensure the genomes don't have any mistakes. By reconstructing genomes of individual species from a community, we can get a higher resolution picture of difficult to grow bacterial communities, such as those living in our guts. This is important because bacteria that live inside us affect bodily functions and can contribute to disease. This method will allow researchers to better investigate bacteria associated with human health. 
+
+
+
+
+
+
+
+
+
+
+
+
