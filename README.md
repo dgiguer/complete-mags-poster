@@ -14,10 +14,13 @@ git clone https://github.com/dgiguer/complete_mags_poster.git
 cd complete_mags_poster/shiny
 ```
 
-2) Open R, run the app
+2) Open R, install shiny, run the app
 
 ```
-require(shiny)
+# install the shiny package if not already installed
+install.packages("shiny")
+
+library(shiny)
 
 runApp("poster_shiny.R")
 ```
