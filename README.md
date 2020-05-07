@@ -1,6 +1,6 @@
 # Complete and validated genomes poster for Biochemistry poster day
 
-![version_1](poster_version1.png)
+![version_1](version_1.png)
 
 The static version is located as a `pdf` in the top level. 
 
